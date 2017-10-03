@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Connection setting -->
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver </property>
+		<property name="hibernate.connection.url">
+			jdbc:postgresql://localhost/formation</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">postgres</property>
+		<!-- SQL dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<!-- Print executed SQL to stdout -->
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="hibernate.generate_statistics">true</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<mapping class="com.m2i.formation.dao.entity.Formation" />
+		<mapping class="com.m2i.formation.dao.entity.TravauxPratiques" />
+		<mapping class="com.m2i.formation.dao.entity.TpCorrection" />
+		<mapping class="com.m2i.formation.dao.entity.FormationDetail" />
+	</session-factory>
+</hibernate-configuration>

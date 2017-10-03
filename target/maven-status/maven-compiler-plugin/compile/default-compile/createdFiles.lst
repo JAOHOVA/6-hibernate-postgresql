@@ -1,0 +1,4 @@
+com\m2i\formation\dao\DemoHibernate.class
+com\m2i\formation\dao\entity\TravauxPratiques.class
+com\m2i\formation\dao\entity\Formation.class
+com\m2i\formation\dao\util\HibernateUtil.class
